@@ -23,7 +23,7 @@ client.on('message', message =>{
 })
 
 client.on('message', message =>{
-    if(message.content === "Bonjour" || message.content === "bonjour" || message.content === "yo" || message.content === "Yo" || message.content === "Salut" || message.content === "salut"){
+    if(message.content === "Bonjour" || message.content === "bonjour" || message.content === "yo" || message.content === "Yo" || message.content === "Salut" || message.content === "salut" || message.content === "Salut :wink:"){
         message.reply('Salut jeune Patatawan ! :wink: ');
         console.log('répond2');
     }
