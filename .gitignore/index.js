@@ -6,7 +6,7 @@ client.on("ready", function() {
     client.user.setGame("manger des Frites");
 });
 
-client.login('NTYxODg3NjMyNDA2MjE2NzA3.XKCxcw.41-XaSmaqERfWs2YjbRMCZSxt9A');
+client.login(process.env.TOKEN);
 
 client.on('message', message =>{
     if(message.content === "Patate" || message.content === "patate"){
