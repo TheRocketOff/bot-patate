@@ -8,6 +8,16 @@ client.on("ready", function() {
 
 client.login(process.env.TOKEN);
 
+
+client.on('guildMemberAdd', member =>{
+    member.guild.channels.get('504955807067144195').send('Bienvenue ' + member.user + ' sur le discord officiel de la **Patate Army** ! Avant de profiter pleinement du serveur, merci de prendre connaissance du réglement ! Nous te souhaitons un bon moment sur notre espace !');
+})
+
+client.on('guildMemberRemove', member =>{
+    member.guild.channels.get('504955807067144195').send('Au revoir ' + member.user + ', encore un raciste des patates..');
+})
+
+
 client.on('message', message =>{
     if(message.content === "Patate" || message.content === "patate"){
         message.reply('Patate toi même ! :nerd:');
